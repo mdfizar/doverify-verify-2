@@ -180,6 +180,7 @@ body {
   overflow-Y: auto;
   display: flex;
   flex-direction: column;
+  background-image: url('../images/location-bg.svg');
 }
 .product-detail-item>div {
   margin: auto 0px;
@@ -516,6 +517,13 @@ body {
 @media (min-width: 376px) and (max-width: 390px) {
   .product-detail-item{
     height: 448px;
+  }
+}
+@media (min-width: 375px) and (max-width: 430px) {
+  .noproduct-container, .geneuin-product-container, 
+  .product-sold-container {
+    height: 100vh;
+    overflow: hidden;
   }
 }
 /* desktop screen  */
