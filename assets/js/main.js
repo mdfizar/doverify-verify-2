@@ -196,7 +196,7 @@ moreTrace.style.opacity ="0";
 
 function handleShowMoreTrace() {
   if(moreTrace.style.height ==="0px") {
-    moreTrace.style.height ="250px";
+    moreTrace.style.height ="auto";
     moreTrace.style.opacity ="1";
     seeMoreBtn.textContent ="See Less";
   }else{
