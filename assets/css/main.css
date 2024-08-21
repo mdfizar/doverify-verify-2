@@ -343,12 +343,20 @@ body {
   font-size: 16px;
 }
 .trace-details-container {
-  border: 1px solid rgb(255, 0, 0);
+  /* border: 1px solid rgb(255, 0, 0); */
   padding: 10px;
+  position: relative;
+}
+.trac-details-left-border {
+  position: absolute;
+  border-left: 2px dotted gray;
+  left: 0px;
+  top: 31px;
+  bottom: 53px;
 }
 .trace-details-container>div {
   padding: 7px 0px;
-  border-bottom: 1px solid rgb(255, 0, 0);
+  /* border-bottom: 1px solid rgb(255, 0, 0); */
 }
 .trace-details-container>div:last-child {
   border-bottom: 0px;
@@ -362,14 +370,23 @@ body {
   justify-content: center;
   width: 20px;
   height: 20px;
-  background-color: var(--verify-btn);
-  color: #fff;
+  background-color: #fff;
+  color: var(--text-color);
+  border: 3px solid var(--verify-btn);
   font-family: roboto;
-  font-size: 16px;
+  font-size: 10px;
   border-radius: 50%;
   position: absolute;
-  left: 0px;
+  left: -19px;
   top: 11px;
+}
+.trace-details-container .trace-details 
+.trace-details-border-right {
+  width: 25px;
+  border-bottom: 2px dotted gray;
+  position: absolute;
+  left: 2px;
+  top: 21px;
 }
 .trace-details-container .trace-details .trace-address {
   padding-left: 34px;
