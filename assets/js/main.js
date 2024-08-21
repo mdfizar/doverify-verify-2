@@ -187,3 +187,21 @@ radioInput.forEach(radio => {
 document.addEventListener("DOMContentLoaded", () => {
   handleRadioChange();
 });
+
+// location tracker details 
+const moreTrace = document.querySelector(".more-trace-details");
+const seeMoreBtn = document.querySelector(".show-more");
+moreTrace.style.height ="0px";
+moreTrace.style.opacity ="0";
+
+function handleShowMoreTrace() {
+  if(moreTrace.style.height ==="0px") {
+    moreTrace.style.height ="200px";
+    moreTrace.style.opacity ="1";
+    seeMoreBtn.textContent ="See Less";
+  }else{
+    moreTrace.style.height ="0px";
+    moreTrace.style.opacity ="0";
+    seeMoreBtn.textContent ="See More";
+  }
+}
